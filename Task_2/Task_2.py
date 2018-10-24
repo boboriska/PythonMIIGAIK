@@ -1,113 +1,113 @@
 # #Задача 1 Приветствие (1 балл)
-# # Напишите программу, которая запрашивает имя пользователя, а затем приветствует его.
+# Напишите программу, которая запрашивает имя пользователя, а затем приветствует его.
 #
-# name=input('Введите ваше имя: ')
-# print('Привет, '+name+'!')
-#
+name=input('Введите ваше имя: ')
+print('Привет, '+name+'!')
+
 # # Задача 2 Возведение в степень. (1 балл)
 # # Вычислите $2^{20}$. Выведите на экран вычисленное значение.
-# chislo = 2**20
-# print(chislo)
-#
-# # Задача 3 Гипотенуза (1 балл)
-#
-# katet_1 = int(input('Введите первый катет: '))
-# katet_2 = int(input('Введите второй катет: '))
-# sum_kat = katet_1**2+katet_2**2
-# print(sum_kat**0.5)
-#
-# # Задача 4 Делёж яблок (1 балл)
-#
-# student = int(input('Количество школьников: '))
-# appels = int(input('Количество яблок: '))
-# print(appels//student)
+chislo = 2**20
+print(chislo)
+
+# Задача 3 Гипотенуза (1 балл)
+
+katet_1 = int(input('Введите первый катет: '))
+katet_2 = int(input('Введите второй катет: '))
+sum_kat = katet_1**2+katet_2**2
+print(sum_kat**0.5)
+
+# Задача 4 Делёж яблок (1 балл)
+
+student = int(input('Количество школьников: '))
+appels = int(input('Количество яблок: '))
+print(appels//student)
 
 # Задача 5 (1 балл)
 # Напишите программу, которая считывает целое число и выводит текст, указанный ниже, который содеражит следующее и предыдущее числа.
 # Сохраните пробелы и переносы строк, указанные в тексте.
-# number = int(input('Введите число: '))
-# plus = number+1
-# minos = number-1
-# print('Получено число -'+str(number)+'. \nСледующие число -'+str(plus)+', предыдущее число -'+str(minos)+'.')
+number = int(input('Введите число: '))
+plus = number+1
+minos = number-1
+print('Получено число -'+str(number)+'. \nСледующие число -'+str(plus)+', предыдущее число -'+str(minos)+'.')
 
 # Задача 6 (1.5 балла)
 
-# rundom_number = int(input('Введи целое число: '))
-# print(rundom_number+2-(rundom_number%2))
+rundom_number = int(input('Введи целое число: '))
+print(rundom_number+2-(rundom_number%2))
 
 # Задача 7 (1.5 балла)
 
-# big_number = list(input('Введите числа: '))
-# for key, value in enumerate(big_number):
-#     big_number[key] = int(value)
-#
-# print(sum(big_number))
+big_number = list(input('Введите числа: '))
+for key, value in enumerate(big_number):
+    big_number[key] = int(value)
+
+print(sum(big_number))
 
 # Задача 9 (1 балл)
 # Как и в прошлом задании пользователь подает на вход список. Вам нужно вывести все элементы списка, стоящие на четных индексах.
-# spisok = list(input('Введите числа: '))
-# print(spisok[::2])
+spisok = list(input('Введите числа: '))
+print(spisok[::2])
 
 # Задача 10 (1 балл)
 # Пользователь поочередно вводит 2 целых числа $n$ и $m$, при чем $n \le m$. Выведите все числа от $n$ до $m$ включительно. Обратите внимаие на формат вывода!
-# n = int(input('Введите число m:'))
-# m = int(input('Введите число больше, чем n:'))
-# for i in range(n,m+1):
-#      print (i)
+n = int(input('Введите число m:'))
+m = int(input('Введите число больше, чем n:'))
+for i in range(n,m+1):
+     print (i)
 
 # Задача 11 Ряд Лейбница (2 балла)
-# res = 0
-# for i in range(100):
-#     res += 4 * ((-1)**i) / (2 * i + 1)
-#
-# print(res)
+res = 0
+for i in range(100):
+    res += 4 * ((-1)**i) / (2 * i + 1)
+
+print(res)
 #
 # #Задача 12 (1 балл)
 
-# n = int(input('Введите число: '))
-# l = list(range(1, n + 1))
-# print(l)
-# for i in range(0, len(l) - 1, 2):
-#     l[i], l[i+1] = l[i+1], l[i]
-# print(l)
+n = int(input('Введите число: '))
+l = list(range(1, n + 1))
+print(l)
+for i in range(0, len(l) - 1, 2):
+    l[i], l[i+1] = l[i+1], l[i]
+print(l)
 
 # Задача 13 Снежинка (2 балла)
 
-# snowflake = int(input('Введите нечетное число: '))
-# a = [["."] * snowflake for i in range(snowflake)]
-# for i in range(snowflake):
-#     a[i][i] = "*"
-#     a[i][snowflake // 2] = "*"
-#     a[snowflake // 2][i] = "*"
-#     a[i][(snowflake - 1)- i] = "*"
-# for row in a:
-#     print(' '.join([str(elem) for elem in row]))
+snowflake = int(input('Введите нечетное число: '))
+a = [["."] * snowflake for i in range(snowflake)]
+for i in range(snowflake):
+    a[i][i] = "*"
+    a[i][snowflake // 2] = "*"
+    a[snowflake // 2][i] = "*"
+    a[i][(snowflake - 1)- i] = "*"
+for row in a:
+    print(' '.join([str(elem) for elem in row]))
 
 # Задача 14 Транспонирование матрицы (3 балла)
 
-# m=[[1, 1, 1],
-# [2, 2, 2],
-# [3, 3, 3],
-# [4, 4, 4]]
-# matrix_t = list(zip(*m))
-#
-# print(m)
-# print(matrix_t)
-#
+m=[[1, 1, 1],
+[2, 2, 2],
+[3, 3, 3],
+[4, 4, 4]]
+matrix_t = list(zip(*m))
+
+print(m)
+print(matrix_t)
+
 # Задача 16 Составление базы данных (3 балла)
 F = {'Ксюша': 22, 'Иван': 24, 'Антон': 25, 'Маша': 26, 'Дима': 24, 'Катя': 22}
-# del(F['Ксюша'])
-# print(F)
-# sum_v = 0
-# for key, value in F.items():
-#     sum_v += value
-# print(sum_v/len(F))
-#
+del(F['Ксюша'])
+print(F)
+sum_v = 0
+for key, value in F.items():
+    sum_v += value
+print(sum_v/len(F))
+
 # Задача 15 (1 балл)
 # Пользователь задает число $n$. Необходимо вернуть словарь, где ключами бы являлись числа от -(n-1) до (n-1), а значения - квадраты этих чисел.
-# n = int(input('Введите числО:'))
-# J = dict([(n, n**2)])
-# print(J)
+n = int(input('Введите числО:'))
+J = dict([(n, n**2)])
+print(J)
 
 
 # Задача 18 Перевод с эльфийского (5 баллов)
